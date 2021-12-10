@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Mundial</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="wrap">
+        <div class="widget">
+        
+            <div class="fecha">
+                <p id="diaSemana" class="diaSemana"></p>
+                <p id="dia" class="dia"></p>
+                <p>de</p>
+                <p id="mes" class="mes"></p>
+                <p>del</p>
+                <p id="year" class="year"></p>
+            </div>
+       
+
+            <div class="reloj">
+                <p id="horas" class="horas"></p>
+                <p>:</p>
+                <p id="minutos" class="minutos"></p>
+                <p>:</p>
+
+                    <div class="caja-segundos">
+                        <p id="ampm" class="ampm"></p>
+                        <p id="segundos" class="segundos"></p>
+                    </div>
+            </div> 
+        </div>
+    </div>
+    <div class="botones">
+          <button class="boton" id="arg" onclick="fondoArg()" >Argentina</button>
+          <button class="boton" id="rusia" onclick="fondoru()">Rusia</button>
+          <button class="boton" id="eeuu" onclick="fondoEeuu()">EEUU</button>
+          <button class="boton" id="japon" onclick="fondoJapon()">Japon</button>
+    </div>
+    
+</body>
+<script src="./reloj.js"></script>
+</html>
